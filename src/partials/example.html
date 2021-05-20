@@ -1,29 +1,35 @@
-<article class="example">
-  <h1>HTML-фрагменты</h1>
-
-  <!-- Путь к изображениям из HTML-фрагмента такой, как из файла index.html -->
-  <img src="images/demo.jpg" alt="" width="320" />
-  <p>
-    Плагин
-    <a href="https://github.com/posthtml/posthtml-include" target="_blank" rel="noopener noreferrer">
-      posthtml-include
-    </a>
-    позволяет добавлять в HTML-файлы страниц код из других HTML-файлов (фрагментов). Фрагменты
-    хранятся в папке
-    <code>src/partials</code>. Добавление происходит при компиляции файлов страниц, например
-    <code>index.html</code>.
-  </p>
-
-  <p>
-    Этот файл <code>example.html</code> &mdash; пример такого фрагмента, с разметкой определённой
-    части главной страницы. Это очень удобно при командной разработке на студенческих проектах,
-    когда в одном HTML-файле пишет несколько человек сразу.
-  </p>
-
-  <p>
-    Синтаксис добавление фрагмента в главный файл:
-    <code> &lt;include src="./partials/имя-файла.html"&gt;&lt;/include&gt; </code>
-  </p>
-
-  <div class="background"></div>
-</article>
+<!--секция для роботы с Registration (Разработчик:  Natalia-doobro   )-->
+<section class="section">
+  <div class="container foto ">
+    <div class="register-rectangle">
+      <h2 class="section__title register__title title">Registration</h2>
+    
+      <div class="register">
+        <div class="register__date">
+          <p class="section__text register__text">May 23, 11:00 <span >New York</span></p>
+          <p class="section__text register__text">$ 699</p>
+        </div>
+        <span class="register__decor-line"></span>
+        
+        
+        <div class="register-position">
+          <form class="register_form" autocomplete="on" novalidate>
+            <div>
+              <p class="section__text form__text">Apply your personal info for registration</p>
+        
+              <div class="register-position-input">
+                <input class="register__input" type="text" name="name" placeholder="Your name" required pattern="^[A-Za-zА-Яа-яЁё\s]+$" />
+                <input class="register__input" type="tel" name="phone" placeholder="Phone number" pattern="[0-9]{10}" />
+                <input class="register__input" type="email" name="email" placeholder="Email" required />
+              </div>
+            </div>
+        
+            <button type="submit" class="button register__button">Register</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</section>

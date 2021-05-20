@@ -1,0 +1,21 @@
+.foto {
+  z-index: 1;
+  width: 768px;
+  background-image: url('../images/donut-chocolate.png'), url('../images/confetti.png');
+  background-size: 256.68px 254px, 388.9px 373.67px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px 0px, 100px 200px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .foto {
+    background-image: url('../images/donut-chocolate@2x.png'), url('../images/confetti@2x.png');
+  }
+}
+.section {
+  position: relative;
+  z-index: 10;
+}
