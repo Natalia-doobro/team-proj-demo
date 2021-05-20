@@ -1,0 +1,94 @@
+body.menu-open {
+  overflow: hidden;
+  overflow-y: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu--mobile {
+  // display: none;
+
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 25px;
+  background: var(--bg-menu-color);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+
+  transition: left var(--animation-duration);
+
+  &.is-open {
+    // display: block;
+    left: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu--desktop {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.menu__list {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.22;
+
+  @media screen and (max-width: $tablet-max) {
+    width: 100vw;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.menu__item {
+  transition: color, background-color var(--animation-duration);
+
+  &:hover,
+  &:focus {
+    color: var(--button-bg-color);
+    background-color: none;
+  }
+
+  &:active {
+    color: var(--button-accent-color);
+    background-color: none;
+  }
+}
+
+.menu__item:not(:last-child) {
+  @media screen and (min-width: $desktop) {
+    margin-right: 20px;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
