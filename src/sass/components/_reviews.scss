@@ -20,7 +20,9 @@
 }
 
 .reviews-list {
-  @media screen and (min-width: $tablet) {
+
+  display: flex;
+  /*@media screen and (min-width: $tablet) {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -29,15 +31,22 @@
   @media screen and (min-width: $desktop) {
     justify-content: space-between;
   }
+
+  */
 }
 
+/*
 .review-article {
-  @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) {
     position: absolute;
     top: 35px;
     left: 0;
   }
+
+
 }
+*/
+
 
 .reviews-list__item {
   text-align: center;
@@ -79,11 +88,15 @@
   }
 }
 
+/*
 .review-text--wrap {
   @media screen and (min-width: $tablet) {
     display: none;
   }
 }
+
+*/
+
 
 .reviews__img {
   margin-left: auto;
@@ -99,6 +112,8 @@
 .reviewer-name {
   margin-bottom: 10px;
 }
+
+/*
 
 .pagination-text {
   font-size: 14px;
@@ -140,3 +155,6 @@
     }
   }
 }
+
+*/
+
